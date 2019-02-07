@@ -5,6 +5,7 @@ This is an edited blog using Markdown.
 # Completed
 
  - ~~Assignment 1~~
+ - ~~Assignment 2~~
 
 ## Other stuff
 
