@@ -2,18 +2,13 @@
 
 This is an edited blog using Markdown.
 
-Some useful features in markdown are:
-- bulleted lists
-- of multiple items
+# Completed
 
-# Headers
+ - ~~Assignment 1~~
 
-## Subheaders
+## Other stuff
 
-**Bold** and *Italic* markup.
+I have my own website, concerning photography: [Nicepictures](www.nicepictures.nl).
 
-You can use explicit links, e.g., to the [course site](https://rubigdata.github.io/).
-
-And lots more, to see what you can do with Markdown (including images, and tables) take a look at the [Cheatsheet][cheat] (an example of a very useful feature to separate actual links from their references in your text).
-
+I'll leave this cheatsheet here :)
 [cheat]:        https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet   "Markdown cheatsheet"
