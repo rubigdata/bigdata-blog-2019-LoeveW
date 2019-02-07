@@ -1,4 +1,4 @@
-# Sample blog 
+# Edited blog
 
 This is an edited blog using Markdown.
 
