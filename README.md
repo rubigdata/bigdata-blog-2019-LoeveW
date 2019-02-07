@@ -1,6 +1,6 @@
 # Sample blog 
 
-This is a sample blog using Markdown. Edit this file in order to create your own content. 
+This is an edited blog using Markdown.
 
 Some useful features in markdown are:
 - bulleted lists
