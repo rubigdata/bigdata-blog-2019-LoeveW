@@ -38,7 +38,7 @@ To inspect who appears more often (Romeo or Juliet), I have altered the mapper, 
     }
   }
   ```
-So, by altering the mapper as shown above, we can see who appears more often, by only going over the dataset once.
+So, by altering the mapper as shown above, we can see who appears more often, by only going over the whole dataset once.
   
 This results in a more comprehensible file, which shows us that "Romeo" occurs 313 times and "Juliet" occurs 204 times. Thus, Romeo makes more occurences. 
 
