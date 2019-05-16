@@ -1,4 +1,4 @@
-# Assignment 3A
+# Assignment 3A - part 1
 ## Questions from the notebook
 1.  Q: Explain why there are multiple result files.
     A: Because there are multiple partitions.
@@ -6,7 +6,7 @@
 2.  Q: why are the counts different?
     A: Because of the mapping: every letter is converted to lowercase and the removal of non-letters. Before, it was case sensitive. And I think that when a dot, comma, or other punctuation marks prevented the word "Macbeth" from being recognized (it should be precisely Macbeth, and the split is on spaces, so a comma or dot will be part of the word), wheras in this new mapping, these characters are removed.
 
-# Assignment 3B
+# Assignment 3A - part 2
 
 1.  Q: Spot the differences between the results, and try to map what you see on Chapter 2 that we read for the course.
     A: The `rddPartsGroupPart2` had a `Hashpartitioner(2)` assigned to it, where the 2 indicates the number of partitions that we will end up with, while the `rddPaursGroup` had no partitioner. The default number of partition is the amount of CPU cores that we run on, so that is why there are 8 partitions created in the first one.
