@@ -28,13 +28,10 @@
     It does not look nice (at least not on my laptop), since there are a lot of columns. Like what has been done before in the notebook, we could select the columns we're interested in by using `.select()`  
     For example, I chose the do the following: `val DF2 = bagdata.select('STRAAT, 'HUISNUMMER, 'HUISLETTER, 'HUISNUMMERTOEVOEGING, 'OPENBARERUIMTE_ID, 'STATUS, 'WIJK_OMS)`, which gave me most of the useful data. I would not need the coordinates for example, since we know that they are `null` anyway.
 
-2.  **Q**: Discuss decisions in data selection and data cleaning that you took to complete the assignment in your blog post.  
-    **A**: 
-
-3.  **Q**: Why would you apply the transformation on the artworks dataset to join the result against the addresses, instead of vice versa?  
+2.  **Q**: Why would you apply the transformation on the artworks dataset to join the result against the addresses, instead of vice versa?  
     **A**: Because this dataset is much smaller, and you will only transform the entries needed. Doing it viceversa results in a lot of extra work, on data that you were not going to use in the first place.
     
-4.  **Q**: Can you produce the list of quarters that is missing because no artwork has been situated in the quarter?  
+3.  **Q**: Can you produce the list of quarters that is missing because no artwork has been situated in the quarter?  
     **A**: Yes, we can use SQL for this:  
 
 ```scala  
@@ -86,10 +83,10 @@ The resulting list is:
 ```
 
     
-5.  **Q**: Can you produce a longer list of quarters and their oldest artworks?  
+4.  **Q**: Can you produce a longer list of quarters and their oldest artworks?  
     **A**: I don't see a way to make a more complete list. We already used the coordinates to match the artworks to the quarter they are in. The quarters that are listed above were left untouched by this join. You could manually do it, but that will be a lot of work. 
-    
-6.  **Q**:  
+
+5.  **Q**: What are the years associated to artworks not yet matched up with the addresses database? What does this mean for our initial research question?
     **A**: I first tried filtering on null values in kosquarter, but apparently those were not in the data anymore. Therefore, I decided to compare the list with kos:
     
 ```scala
