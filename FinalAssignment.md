@@ -39,4 +39,11 @@ And we were all set :).
 
 #### Of course, I did not actually pull my hair out
 The spark-app was built, smashed together in a JAR file and submitted to the cluster. Judging from my web-interface, it ran for 16 seconds on all 4 cores. During this time, it was counting the number of lines where "a" occurred in and the number of lines where "e" occurred in.
+Also, it collected the indices of all values where "i" occurred, then multiply those indices by 2, and filtering out all even numbers, by issueing
 
+```    val numAs = data.indices("i").map(a => a * 2).filter(b => b % 2 == 0)
+```
+Of course, you can do a lot more with this data, you just use Scala operations to an add/replace this program.
+For my purposes, this is working, after quite some trouble, so I will happily finish this assignment, being able to say that I wrote some program that executes on a cluster :)
+
+Happy summer holidays!
