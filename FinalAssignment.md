@@ -10,7 +10,8 @@ The set-up of the Spark-workers and the Spark-master was painless. Docker ran th
 As we had worked inside the containers for the other parts of the course, I had already executed 
 
 ```bash
-docker run -it bde2020/spark-master:2.4.1-hadoop2.7 /bin/bash```
+docker run -it bde2020/spark-master:2.4.1-hadoop2.7 /bin/bash
+```
 
 Since nothing was working, I couldn't run anything, Googles solutions didn't work and my patience was depleted, I asked the teacher what I was doing wrong. Yap. I should not have opened the container.
 So, I removed the downloaded files that I obtained using `wget` from http://rubigdata.github.io/course/background/rubigdata.tgz from the container.
@@ -25,7 +26,8 @@ It is called Homebrew (and for every Mac-user that ever uses the terminal, this 
 So, for maximum satisfaction, we enter:
 
 ```bash
-brew install wget```
+brew install wget
+```
 
 and execute
 ```bash
